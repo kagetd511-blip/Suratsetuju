@@ -10,29 +10,29 @@
 body{
     font-family: Arial;
     background:#cfcfcf;
-    padding:8px;
+    padding:4px;
 }
 
 /* SURAT */
 .surat{
     background:#fff;
-    border:1px solid #ddd;
+    border:1px solid #ccc;
     width:100%;
-    max-width:360px;
+    max-width:400px;
     margin:auto;
-    padding:14px;
-    font-size:10px;
+    padding:10px;
+    font-size:8.5px;
     position:relative;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    border-radius:6px;
-    filter: contrast(0.98) brightness(0.99);
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    border-radius:5px;
+    line-height:1.25;
 }
 
 /* HEADER */
 .header{
-    border-bottom:2px solid #000;
-    padding-bottom:6px;
-    margin-bottom:8px;
+    border-bottom:1px solid #000;
+    padding-bottom:4px;
+    margin-bottom:6px;
 }
 
 .top{
@@ -44,27 +44,27 @@ body{
 .logo-left{
     display:flex;
     align-items:center;
-    gap:5px;
+    gap:4px;
     font-weight:bold;
-    font-size:9px;
+    font-size:8px;
 }
 
-.logo-left img{ width:20px; }
-.logo-right img{ width:26px; }
+.logo-left img{ width:16px; }
+.logo-right img{ width:20px; }
 
 .header-text{
     text-align:center;
-    margin-top:4px;
+    margin-top:2px;
 }
 
 .header-text h2{
     margin:0;
-    font-size:12px;
+    font-size:10px;
 }
 
 .header-text p{
-    margin:1px 0;
-    font-size:9px;
+    margin:0;
+    font-size:7px;
 }
 
 /* STATUS */
@@ -72,49 +72,69 @@ body{
     text-align:center;
     color:green;
     font-weight:bold;
-    margin:8px 0;
+    margin:5px 0;
+    font-size:8px;
 }
 
-/* FORM */
-.row{ margin:2px 0; }
-.label{ display:inline-block; width:110px; }
+/* DATA RAPI */
+.data{
+    margin-top:4px;
+}
+
+.row{
+    display:flex;
+    margin:2px 0;
+}
+
+.label{
+    width:115px;
+}
+
+.colon{
+    width:10px;
+    text-align:center;
+}
+
+.value{
+    flex:1;
+}
 
 /* PARAGRAF */
 .paragraf{
-    margin-top:8px;
+    margin-top:6px;
     text-align:justify;
-    line-height:1.4;
 }
 
 /* STEMPEL */
 .stempel{
     position:absolute;
-    bottom:70px;
-    left:18px;
-    opacity:0.12;
+    bottom:55px;
+    left:12px;
+    opacity:0.1;
     transform:rotate(-15deg);
 }
-.stempel img{ width:90px; }
+.stempel img{ width:65px; }
 
 /* TTD */
 .ttd{
-    margin-top:35px;
+    margin-top:15px;
     text-align:right;
 }
 
 .ttd-box{
-    height:50px;
+    height:30px;
 }
 
 .ttd-box img{
-    max-height:50px;
+    max-height:30px;
 }
 
 .nama{
-    margin-top:4px;
+    margin-top:2px;
     font-weight:bold;
     border-bottom:1px solid #000;
     display:inline-block;
+    font-size:8px;
 }
 </style>
 
@@ -148,19 +168,18 @@ body{
 
 <div class="status">STATUS: DISETUJUI</div>
 
-<br>
-
-<div>Kepada Yth.</div>
-<div>Pihak Aplikasi Pinjaman Online</div>
+<div>Kepada Yth. Pihak Aplikasi Pinjaman Online</div>
 
 <br>
 
 <!-- DATA -->
-<div class="row"><span class="label">Aplikasi</span>: Shopee</div>
-<div class="row"><span class="label">Nama</span>: Budi Santoso</div>
-<div class="row"><span class="label">No. WhatsApp</span>: 0812-3456-7890</div>
-<div class="row"><span class="label">Total Pinjaman</span>: Rp1.000.654</div>
-<div class="row"><span class="label">Jangka Waktu</span>: 3 Bulan</div>
+<div class="data">
+  <div class="row"><span class="label">Aplikasi</span><span class="colon">:</span><span class="value">Shopee</span></div>
+  <div class="row"><span class="label">Nama</span><span class="colon">:</span><span class="value">Budi Santoso</span></div>
+  <div class="row"><span class="label">No. WhatsApp</span><span class="colon">:</span><span class="value">0812-3456-7890</span></div>
+  <div class="row"><span class="label">Total Pinjaman</span><span class="colon">:</span><span class="value">Rp1.000.654</span></div>
+  <div class="row"><span class="label">Jangka Waktu</span><span class="colon">:</span><span class="value">3 Bulan</span></div>
+</div>
 
 <!-- ISI -->
 <div class="paragraf">
@@ -193,15 +212,15 @@ Demikian surat ini disampaikan untuk digunakan sebagaimana mestinya.
 
 <!-- TTD -->
 <div class="ttd">
-Hormat Kami,<br><br>
+Hormat Kami,<br>
 
 <div class="ttd-box">
-    <img src="https://i.ibb.co/7kKQ0Kf/signature.png">
+<img src="https://i.ibb.co/7kKQ0Kf/signature.png">
 </div>
 
 <div class="nama">PT. Solusi Keuangan Digital</div>
 
-<div style="font-size:8px;margin-top:4px;">
+<div style="font-size:7px;margin-top:2px;">
 Dokumen ini sah tanpa tanda tangan basah
 </div>
 
