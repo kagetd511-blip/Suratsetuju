@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Surat Persetujuan</title>
+
+<style>
+body{
+    font-family: Arial;
+    background:#dcdcdc;
+    padding:10px;
+}
+
+/* SURAT */
+.surat{
+    background:#fff;
+    max-width:420px;
+    margin:auto;
+    padding:18px 20px;
+    font-size:11px;
+    position:relative;
+    box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+/* HEADER */
+.header{
+    border-bottom:2px solid #000;
+    padding-bottom:8px;
+    margin-bottom:10px;
+}
+
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-left{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    font-weight:bold;
+    font-size:10px;
+}
+
+.logo-left img{ width:22px; }
+.logo-right img{ width:30px; }
+
+.header-text{
+    text-align:center;
+    margin-top:5px;
+}
+
+.header-text h2{
+    margin:0;
+    font-size:13px;
+}
+
+.header-text p{
+    margin:2px 0;
+    font-size:10px;
+}
+
+/* STATUS */
+.status{
+    text-align:center;
+    color:green;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+/* FORM */
+.row{ margin:4px 0; }
+.label{ display:inline-block; width:120px; }
+
+/* PARAGRAF */
+.paragraf{
+    margin-top:10px;
+    text-align:justify;
+}
+
+/* STEMPEL */
+.stempel{
+    position:absolute;
+    bottom:80px;
+    left:20px;
+    opacity:0.15;
+    transform:rotate(-15deg);
+}
+.stempel img{ width:110px; }
+
+/* TTD */
+.ttd{
+    margin-top:45px;
+    text-align:right;
+}
+
+.ttd-box{
+    height:60px;
+}
+
+.ttd-box img{
+    max-height:60px;
+}
+
+.nama{
+    margin-top:5px;
+    font-weight:bold;
+    border-bottom:1px solid #000;
+    display:inline-block;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="surat">
+
+<!-- HEADER -->
+<div class="header">
+    <div class="top">
+        <div class="logo-left">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+            Pinjaman Care
+        </div>
+
+        <div class="logo-right">
+            <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png">
+        </div>
+    </div>
+
+    <div class="header-text">
+        <h2>PT. Solusi Keuangan Digital</h2>
+        <p>Jakarta, 10 Juni 2026</p>
+    </div>
+</div>
+
+<div>Nomor : 001/SKD/PKD/06/2026</div>
+<div>Hal : Persetujuan Pengembalian / Pembatalan Saldo</div>
+
+<div class="status">STATUS: DISETUJUI</div>
+
+<br>
+
+<div>Kepada Yth.</div>
+<div>Pihak Aplikasi Pinjaman Online</div>
+
+<br>
+
+<!-- DATA -->
+<div class="row"><span class="label">Aplikasi</span>: Shopee</div>
+<div class="row"><span class="label">Nama</span>: Budi Santoso</div>
+<div class="row"><span class="label">No. WhatsApp</span>: 0812-3456-7890</div>
+<div class="row"><span class="label">Total Pinjaman</span>: Rp1.000.654</div>
+<div class="row"><span class="label">Jangka Waktu</span>: 3 Bulan</div>
+
+<!-- ISI -->
+<div class="paragraf">
+Dengan hormat,<br><br>
+
+Berdasarkan data yang telah diajukan, permohonan <b>pengembalian / pembatalan saldo pinjaman online</b> dinyatakan <b>DISETUJUI</b>.<br><br>
+
+Pengembalian dana hanya dilakukan melalui rekening resmi:<br><br>
+
+<b>Bank BRI</b><br>
+No Rekening: <b>067201000360306</b><br>
+Atas Nama: <b>PT. Fliptech Lentera Inspirasi Pertiwi</b><br><br>
+
+Kami menegaskan bahwa hanya rekening tersebut yang sah. Kesalahan transfer di luar rekening tersebut bukan tanggung jawab kami.<br><br>
+
+<b>Nominal Pengembalian: Rp1.000.654</b><br><br>
+
+Lakukan pengiriman sesuai dengan nominal yang tertera. 
+Kode "<b>654</b>" adalah kode transaksi yang dibuat oleh sistem agar pengembalian dapat terdeteksi secara otomatis.<br><br>
+
+Setelah pembayaran dilakukan, sistem akan menyesuaikan limit, tenor, dan bunga dalam waktu maksimal <b>1x24 jam</b>.<br><br>
+
+Demikian surat ini disampaikan untuk digunakan sebagaimana mestinya.
+</div>
+
+<!-- STEMPEL -->
+<div class="stempel">
+<img src="https://cdn-icons-png.flaticon.com/512/2950/2950653.png">
+</div>
+
+<!-- TTD -->
+<div class="ttd">
+Hormat Kami,<br><br>
+
+<div class="ttd-box">
+    <img src="https://i.ibb.co/7kKQ0Kf/signature.png">
+</div>
+
+<div class="nama">PT. Solusi Keuangan Digital</div>
+
+<div style="font-size:9px;margin-top:5px;">
+Dokumen ini sah tanpa tanda tangan basah
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
