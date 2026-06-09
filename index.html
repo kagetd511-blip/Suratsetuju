@@ -3,35 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Surat Persetujuan</title>
 
 <style>
 body{
-    font-family: Arial;
-    background:#cfcfcf;
-    padding:4px;
+    font-family:"Times New Roman", serif;
+    background:#dcdcdc;
+    padding:6px;
 }
 
-/* SURAT */
+/* KERTAS */
 .surat{
     background:#fff;
-    border:1px solid #ccc;
-    width:100%;
-    max-width:400px;
+    max-width:420px;
     margin:auto;
-    padding:10px;
-    font-size:8.5px;
-    position:relative;
-    box-shadow:0 2px 6px rgba(0,0,0,0.15);
-    border-radius:5px;
-    line-height:1.25;
+    padding:12px 10px;
+    border:1px solid #999;
+    box-shadow:0 2px 8px rgba(0,0,0,0.15);
+    font-size:10px;
+    line-height:1.4;
 }
 
 /* HEADER */
 .header{
-    border-bottom:1px solid #000;
-    padding-bottom:4px;
+    border-bottom:2px solid #000;
+    padding-bottom:6px;
     margin-bottom:6px;
 }
 
@@ -39,49 +35,56 @@ body{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    margin-bottom:4px;
 }
 
-.logo-left{
-    display:flex;
-    align-items:center;
-}
-
+/* LOGO KIRI */
 .logo-left img{
-    width:60px;
-    height:32px;
-    object-fit:cover;
-    border-radius:0; /* INI BIKIN GA BULAT */
+    height:28px;
+    width:auto;
+    object-fit:contain;
 }
-    
-.logo-right img{ width:20px; }
 
+/* LOGO KANAN */
+.logo-right img{
+    height:16px;
+}
+
+/* JUDUL */
 .header-text{
     text-align:center;
-    margin-top:2px;
 }
 
 .header-text h2{
     margin:0;
-    font-size:10px;
+    font-size:12px;
+    letter-spacing:0.5px;
 }
 
 .header-text p{
-    margin:0;
-    font-size:7px;
+    margin:2px 0 0;
+    font-size:9px;
+}
+
+/* INFO */
+.info{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:4px;
+    font-size:9px;
 }
 
 /* STATUS */
 .status{
     text-align:center;
-    color:green;
     font-weight:bold;
-    margin:5px 0;
-    font-size:8px;
+    color:#0a8a0a;
+    margin:6px 0;
 }
 
-/* DATA RAPI */
+/* DATA */
 .data{
-    margin-top:4px;
+    margin:6px 0;
 }
 
 .row{
@@ -90,7 +93,7 @@ body{
 }
 
 .label{
-    width:115px;
+    width:110px;
 }
 
 .colon{
@@ -104,43 +107,44 @@ body{
 
 /* PARAGRAF */
 .paragraf{
-    margin-top:6px;
     text-align:justify;
+    margin-top:6px;
+}
+
+/* BOX REKENING */
+.box{
+    border:1px solid #000;
+    padding:5px;
+    margin:6px 0;
+    background:#fafafa;
 }
 
 /* STEMPEL */
 .stempel{
     position:absolute;
-    bottom:55px;
-    left:12px;
-    opacity:0.1;
+    bottom:70px;
+    left:10px;
+    opacity:0.08;
     transform:rotate(-15deg);
 }
-.stempel img{ width:65px; }
+.stempel img{
+    width:70px;
+}
 
 /* TTD */
 .ttd{
-    margin-top:15px;
+    margin-top:12px;
     text-align:right;
 }
 
-.ttd-box{
-    height:30px;
-}
-
-.ttd-box img{
-    max-height:30px;
-}
-
 .nama{
-    margin-top:2px;
+    margin-top:28px;
     font-weight:bold;
     border-bottom:1px solid #000;
     display:inline-block;
-    font-size:8px;
+    font-size:10px;
 }
 </style>
-
 </head>
 
 <body>
@@ -149,6 +153,7 @@ body{
 
 <!-- HEADER -->
 <div class="header">
+
     <div class="top">
         <div class="logo-left">
             <img src="assets/logoo.png">
@@ -160,19 +165,25 @@ body{
     </div>
 
     <div class="header-text">
-        <h2>PT. Solusi Keuangan Digital</h2>
+        <h2>PT. SOLUSI KEUANGAN DIGITAL</h2>
         <p>Jakarta, 10 Juni 2026</p>
     </div>
+
 </div>
 
-<div>Nomor : 001/SKD/PKD/06/2026</div>
-<div>Hal : Persetujuan Pengembalian / Pembatalan Saldo</div>
+<!-- INFO -->
+<div class="info">
+    <div>Nomor : 001/SKD/PKD/06/2026</div>
+</div>
+
+<div style="font-size:9px;">Hal : Persetujuan Pengembalian / Pembatalan Saldo</div>
 
 <div class="status">STATUS: DISETUJUI</div>
 
-<div>Kepada Yth. Pihak Aplikasi Pinjaman Online</div>
-
-<br>
+<div style="margin-top:4px;">
+Kepada Yth.<br>
+Pihak Aplikasi Pinjaman Online
+</div>
 
 <!-- DATA -->
 <div class="data">
@@ -185,26 +196,29 @@ body{
 
 <!-- ISI -->
 <div class="paragraf">
+
 Dengan hormat,<br><br>
 
-Berdasarkan data yang telah diajukan, permohonan <b>pengembalian / pembatalan saldo pinjaman online</b> dinyatakan <b>DISETUJUI</b>.<br><br>
+Berdasarkan hasil verifikasi sistem, permohonan <b>pengembalian / pembatalan saldo pinjaman online</b> telah <b>DISETUJUI</b>.<br><br>
 
-Pengembalian dana hanya dilakukan melalui rekening resmi:<br><br>
+Pengembalian dana hanya melalui rekening resmi:
 
+<div class="box">
 <b>Bank BRI</b><br>
-No Rekening: <b>067201000360306</b><br>
-Atas Nama: <b>PT. Fliptech Lentera Inspirasi Pertiwi</b><br><br>
+No. Rekening: <b>067201000360306</b><br>
+Atas Nama: <b>PT. Fliptech Lentera Inspirasi Pertiwi</b>
+</div>
 
-Kami menegaskan bahwa hanya rekening tersebut yang sah. Kesalahan transfer di luar rekening tersebut bukan tanggung jawab kami.<br><br>
+Kesalahan transfer di luar rekening tersebut bukan tanggung jawab kami.<br><br>
 
 <b>Nominal Pengembalian: Rp1.000.654</b><br><br>
 
-Lakukan pengiriman sesuai dengan nominal yang tertera. 
-Kode "<b>654</b>" adalah kode transaksi yang dibuat oleh sistem agar pengembalian dapat terdeteksi secara otomatis.<br><br>
+Kode "<b>654</b>" digunakan sebagai identifikasi transaksi otomatis.<br><br>
 
-Setelah pembayaran dilakukan, sistem akan menyesuaikan limit, tenor, dan bunga dalam waktu maksimal <b>1x24 jam</b>.<br><br>
+Proses update sistem maksimal <b>1x24 jam</b> setelah pembayaran.<br><br>
 
-Demikian surat ini disampaikan untuk digunakan sebagaimana mestinya.
+Demikian surat ini disampaikan.
+
 </div>
 
 <!-- STEMPEL -->
@@ -216,15 +230,11 @@ Demikian surat ini disampaikan untuk digunakan sebagaimana mestinya.
 <div class="ttd">
 Hormat Kami,<br>
 
-<div class="ttd-box">
-<img src="assets/stempel.png">
-</div>
+<div class="nama">PT. Solusi Keuangan Digital</div><br>
 
-<div class="nama">PT. Solusi Keuangan Digital</div>
-
-<div style="font-size:7px;margin-top:2px;">
+<span style="font-size:9px;">
 Dokumen ini sah tanpa tanda tangan basah
-</div>
+</span>
 
 </div>
 
