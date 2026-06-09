@@ -44,12 +44,15 @@ body{
 .logo-left{
     display:flex;
     align-items:center;
-    gap:4px;
-    font-weight:bold;
-    font-size:8px;
 }
 
-.logo-left img{ width:16px; }
+.logo-left img{
+    width:32px;
+    height:32px;
+    object-fit:cover;
+    border-radius:0; /* INI BIKIN GA BULAT */
+}
+    
 .logo-right img{ width:20px; }
 
 .header-text{
@@ -149,7 +152,6 @@ body{
     <div class="top">
         <div class="logo-left">
             <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
-            Pinjaman Care
         </div>
 
         <div class="logo-right">
