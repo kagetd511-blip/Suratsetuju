@@ -9,140 +9,127 @@
 body{
     font-family:"Times New Roman", serif;
     background:#dcdcdc;
-    padding:6px;
+    padding:4px;
 }
 
 /* KERTAS */
 .surat{
     background:#fff;
-    max-width:420px;
+    max-width:340px; /* DIPERKECIL */
     margin:auto;
-    padding:12px 10px;
+    padding:7px 6px; /* LEBIH TIPIS */
     border:1px solid #999;
-    box-shadow:0 2px 8px rgba(0,0,0,0.15);
-    font-size:10px;
-    line-height:1.4;
+    box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    font-size:7.8px; /* SEMUA DIPERKECIL */
+    line-height:1.2;
 }
 
 /* HEADER */
 .header{
-    border-bottom:2px solid #000;
-    padding-bottom:6px;
-    margin-bottom:6px;
+    border-bottom:1px solid #000;
+    padding-bottom:3px;
+    margin-bottom:4px;
 }
 
 .top{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    margin-bottom:4px;
 }
 
-/* LOGO KIRI */
 .logo-left img{
-    height:28px;
-    width:auto;
-    object-fit:contain;
+    height:20px;
 }
-
-/* LOGO KANAN */
 .logo-right img{
-    height:16px;
+    height:11px;
 }
 
-/* JUDUL */
 .header-text{
     text-align:center;
 }
 
 .header-text h2{
     margin:0;
-    font-size:12px;
-    letter-spacing:0.5px;
+    font-size:9.5px;
 }
 
 .header-text p{
-    margin:2px 0 0;
-    font-size:9px;
+    margin:1px 0 0;
+    font-size:7px;
 }
 
 /* INFO */
 .info{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:4px;
-    font-size:9px;
+    font-size:7.5px;
+    margin-bottom:3px;
 }
 
 /* STATUS */
 .status{
     text-align:center;
     font-weight:bold;
-    color:#0a8a0a;
-    margin:6px 0;
+    color:green;
+    margin:3px 0;
+    font-size:8px;
 }
 
 /* DATA */
 .data{
-    margin:6px 0;
+    margin:4px 0;
 }
 
 .row{
     display:flex;
-    margin:2px 0;
+    margin:1px 0;
 }
 
 .label{
-    width:110px;
+    width:100px;
 }
 
 .colon{
-    width:10px;
+    width:8px;
     text-align:center;
 }
 
-.value{
-    flex:1;
-}
-
-/* PARAGRAF */
+/* ISI */
 .paragraf{
     text-align:justify;
-    margin-top:6px;
+    margin-top:4px;
 }
 
-/* BOX REKENING */
+/* BOX */
 .box{
     border:1px solid #000;
-    padding:5px;
-    margin:6px 0;
+    padding:3px;
+    margin:4px 0;
     background:#fafafa;
 }
 
 /* STEMPEL */
 .stempel{
     position:absolute;
-    bottom:70px;
-    left:10px;
-    opacity:0.08;
+    bottom:50px;
+    left:6px;
+    opacity:0.05;
     transform:rotate(-15deg);
 }
 .stempel img{
-    width:70px;
+    width:50px;
 }
 
 /* TTD */
 .ttd{
-    margin-top:12px;
+    margin-top:8px;
     text-align:right;
+    font-size:7.5px;
 }
 
 .nama{
-    margin-top:28px;
+    margin-top:18px;
     font-weight:bold;
     border-bottom:1px solid #000;
     display:inline-block;
-    font-size:10px;
 }
 </style>
 </head>
@@ -153,12 +140,10 @@ body{
 
 <!-- HEADER -->
 <div class="header">
-
     <div class="top">
         <div class="logo-left">
             <img src="assets/logoo.png">
         </div>
-
         <div class="logo-right">
             <img src="assets/uatas.png">
         </div>
@@ -168,19 +153,16 @@ body{
         <h2>PT. SOLUSI KEUANGAN DIGITAL</h2>
         <p>Jakarta, 10 Juni 2026</p>
     </div>
-
 </div>
 
-<!-- INFO -->
 <div class="info">
-    <div>Nomor : 001/SKD/PKD/06/2026</div>
+Nomor : 001/SKD/PKD/06/2026<br>
+Hal : Persetujuan Pengembalian / Pembatalan Saldo
 </div>
-
-<div style="font-size:9px;">Hal : Persetujuan Pengembalian / Pembatalan Saldo</div>
 
 <div class="status">STATUS: DISETUJUI</div>
 
-<div style="margin-top:4px;">
+<div>
 Kepada Yth.<br>
 Pihak Aplikasi Pinjaman Online
 </div>
@@ -194,7 +176,7 @@ Pihak Aplikasi Pinjaman Online
   <div class="row"><span class="label">Jangka Waktu</span><span class="colon">:</span><span class="value">3 Bulan</span></div>
 </div>
 
-<!-- ISI -->
+<!-- ISI LENGKAP TIDAK DIHAPUS -->
 <div class="paragraf">
 
 Dengan hormat,<br><br>
@@ -232,7 +214,7 @@ Hormat Kami,<br>
 
 <div class="nama">PT. Solusi Keuangan Digital</div><br>
 
-<span style="font-size:9px;">
+<span>
 Dokumen ini sah tanpa tanda tangan basah
 </span>
 
